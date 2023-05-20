@@ -75,15 +75,12 @@ li:hover {
   
 
   .deletekey:hover{
-    transform: rotate3d(90deg);
     cursor: pointer;
   }
   .togglekey:hover{
     cursor: pointer;
   }
 
-
-  
-  #list input:checked + label {
-    text-decoration: line-through;
+  input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 3px hotpink;
   }
