@@ -34,7 +34,7 @@ function addTaskToDOM(task){
     li.innerHTML =`
           <label for="${task.id}">${task.title}</label>
           <input type="checkbox"  class = "togglekey" id="${task.id}" ${task.completed ? 'checked' : ''} >
-          <button type = "button" class="deletekey" data-id="${task.id}" ><i class="fa-solid fa-trash"></i></button>
+          <button class="deletekey" data-id="${task.id}" ><i class="fa-solid fa-trash"></i>delete</button>
       `;
         tasksList.append(li);
         
